@@ -1,8 +1,9 @@
 #include <stdio.h>
-/** 
- *the main function prints a word "Programming is like building a multilingual puzzle"
- *the function returns 0 since we don't want to retunt anything.
-*/
+
+/**
+ * main - prints the sentence "Programming is like building a multilingual puzzle
+ * Return: 0 since ther eis nothing to return
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
