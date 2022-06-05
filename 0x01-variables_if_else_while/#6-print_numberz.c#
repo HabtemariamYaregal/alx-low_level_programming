@@ -1,0 +1,7 @@
+#include <stdio.h>
+/**
+ *main - print all single digit
+ *Return: re
+putchar("\n");
+return (0);
+}
