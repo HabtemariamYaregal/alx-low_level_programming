@@ -8,11 +8,11 @@ int main(void)
 char x;
 for (x = 'a'; x <= 'z'; x++)
 {
-if(x == 'q')
+if (x == 'q')
 {
 continue;
 }
-else if(x == 'e')
+else if (x == 'e')
 {
 continue;
 }
