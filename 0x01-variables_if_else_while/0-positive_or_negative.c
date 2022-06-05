@@ -4,7 +4,8 @@
 /* more headers goes there */
 
 /**
- *main - check weather a number is positive or negative 
+ *main - check weather a number is positive or negative
+ *Return: returns 0 value
  */
 int main(void)
 {
