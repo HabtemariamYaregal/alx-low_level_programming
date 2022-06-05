@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+/**
+ *main - get the last digit of a random number
+ *Return: returns 0 value
+ */
+int main(void)
+{
+for(int x = 'a'; x<= 'z'; x++)
+{
+putchar(tolower(x));
+
+}
+putchar('\n'); 
+}
