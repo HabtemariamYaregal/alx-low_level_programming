@@ -1,9 +1,8 @@
-#include <stdio.h>
+#include <main.h>
 /**
  *main - prints lower case letter in function
  *return: 0 nothing to return
 */
-void print_alphabet(void);
 int main(void)
 {
 print_alphabet();
@@ -12,7 +11,7 @@ return (0);
 void print_alphabet(void)
 {
 char x;
-for (x = 97; x < 123; x++ )
+for (x = 'a'; x < 'z'; x++ )
 {
 putchar(x);
 }
