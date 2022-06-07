@@ -7,6 +7,6 @@
 */
 int _isalpha(int c)
 {
-return (c >= 'A' && c <= 'z')
+  return (c >= 'A' && c <= 'z');
 }
 
