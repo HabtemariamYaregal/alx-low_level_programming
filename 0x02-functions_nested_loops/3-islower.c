@@ -1,18 +1,10 @@
 #include "main.h"
 /**
  * _is lower - lower case and c
+ * Return: 0, if c is lower case
+ *         1, otherwise
 */
 int _islower(int c)
 {
-char c;
-for (c = 'a'; c <= 'z'; c++)
-{
-if (x == 'c')
-{
-return (1);
-}
-else
-return (0);
-}
-}
+return (c >= 'a' && c <= 'z');
 }
