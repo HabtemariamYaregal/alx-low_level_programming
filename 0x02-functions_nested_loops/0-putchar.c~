@@ -1,0 +1,10 @@
+#include <stdio.h>
+/**
+ *main - prints _putchar
+ *return: 0 nothing to return
+*/
+int main(void)
+{
+putchar(48);
+return (0);
+}
