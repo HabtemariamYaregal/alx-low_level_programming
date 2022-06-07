@@ -10,9 +10,9 @@ while (y < 10)
 {
 for (x = 97; x < 120; x++ )
 {
-purtchar(x);
+_purtchar(x);
 }
-putchar('/n');
+_putchar('/n');
 y++;
 }
 }
