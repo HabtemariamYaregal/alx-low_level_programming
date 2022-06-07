@@ -3,6 +3,7 @@
  * _is lower - lower case and c
  * Return: 0, if c is lower case
  *         1, otherwise
+ * c - parameter to be checked
 */
 int _islower(int c)
 {
