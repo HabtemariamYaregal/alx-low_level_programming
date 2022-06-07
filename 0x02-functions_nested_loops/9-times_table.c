@@ -9,10 +9,11 @@ for (x = 0; x < 10; x++)
 {
 for (y = 0; y < 10; y++)
 {
-int z;
+int z = 0;
 z = x * y;
 _putchar(z);
 _putchar(',');
+_putchar(' '); 
 }
 _putchar('\n');
 }
