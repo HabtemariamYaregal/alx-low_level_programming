@@ -8,7 +8,7 @@ char x;
 int y = 0;
 while (y < 10)
 {
-for (x = 97; x < 120; x++ )
+for (x = 'a'; x < 'z'; x++ )
 {
 _putchar(x);
 }
