@@ -6,6 +6,7 @@
 
 int add (int n, int m)
 {
-int p = n * m;
+int p;
+p = n * m;
 return (p);
 }
