@@ -7,5 +7,5 @@
 int add (int n, int m)
 {
 int p = n * m;
-_putchar(p + '0')
+_putchar(p + '0');
 }
