@@ -14,11 +14,11 @@ for (i = 3; i <= 50; i++)
 first = second;
 second = next;
 next = first + second;
-while (next < 4000000)
+if (first < 4000000)
 {
-if (next % 2 == 0)
+if (first % 2 == 0)
 {
-sum = sum + next;
+sum = sum + first;
 }
 }
 }
