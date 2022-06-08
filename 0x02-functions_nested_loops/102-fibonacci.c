@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-int first, second, next, i;
+long int first, second, next, i;
 first = 1;
 second = 2;
 next = first + second;
