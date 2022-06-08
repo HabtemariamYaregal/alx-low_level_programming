@@ -14,11 +14,11 @@ for (i = 3; i <= 50; i++)
 {
 if (i == 50)
 {
-printf("%d", next);
+printf("%ld", next);
 }
 else
 {
-printf("%d, ", next);
+printf("%ld, ", next);
 }
 first = second;
 second = next;
