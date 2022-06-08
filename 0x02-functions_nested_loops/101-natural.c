@@ -2,6 +2,7 @@
 /**
  * main - print the sum of multiples of
  *3 and 5
+ * Return: 0
 */
 int main(void)
 {
