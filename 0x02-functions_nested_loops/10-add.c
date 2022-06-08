@@ -6,6 +6,6 @@
 
 int add (int n, int m)
 {
-p = n * m;
+int p = n * m;
 _putchar(p + '0')
 }
