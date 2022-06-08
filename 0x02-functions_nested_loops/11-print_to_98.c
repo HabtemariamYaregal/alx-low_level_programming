@@ -8,7 +8,8 @@ void print_to_98(int n)
 {
 if (n <= 98)
 {
-for (int i = n; i <= 98; i++)
+int i;
+for (i = n; i <= 98; i++)
 {
 _putchar(n + '0');
 _putchar(',');
@@ -17,7 +18,8 @@ _putchar(' ');
 }
 else
 {
-for (int i = n; i >= 98; i--)
+int i;  
+for ( i = n; i >= 98; i--)
 {
 _putchar(n + '0');
 _putchar(',');
@@ -25,4 +27,4 @@ _putchar(' ');
 }
 }
 }
-}
+
