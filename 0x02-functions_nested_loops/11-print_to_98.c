@@ -12,7 +12,14 @@ if (n <= 98)
 int i;
 for (i = n; i <= 98; i++)
 {
-printf("%d, ",n);
+if (i == 98)
+{
+printf("%d\n", n);
+}
+else
+{
+printf("%d, ", n);
+}
 }
 }
 else
@@ -20,8 +27,14 @@ else
 int i;
 for (i = n; i >= 98; i--)
 {
-printf("%d, ",n);
+if (i == 98)
+{
+printf("%d\n", n);
+}
+else
+{
+printf("%d, ", n);
 }
 }
 }
-
+}
