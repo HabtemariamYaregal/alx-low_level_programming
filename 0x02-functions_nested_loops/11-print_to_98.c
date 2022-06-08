@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * add - print numbers upto 98
+ * print_to_98 - print numbers upto 98
  * @n: the number to start
 */
 
@@ -14,11 +14,11 @@ for (i = n; i <= 98; i++)
 {
 if (i == 98)
 {
-printf("%d\n", n);
+printf("%d\n", i);
 }
 else
 {
-printf("%d, ", n);
+printf("%d, ", i);
 }
 }
 }
@@ -29,11 +29,11 @@ for (i = n; i >= 98; i--)
 {
 if (i == 98)
 {
-printf("%d\n", n);
+printf("%d\n", i);
 }
 else
 {
-printf("%d, ", n);
+printf("%d, ", i);
 }
 }
 }
