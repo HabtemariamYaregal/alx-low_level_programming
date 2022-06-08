@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * add - print numbers upto 98
@@ -11,19 +12,15 @@ if (n <= 98)
 int i;
 for (i = n; i <= 98; i++)
 {
-_putchar(n + '0');
-_putchar(',');
-_putchar(' ');
+printf("%d, ",n);
 }
 }
 else
 {
-int i;  
-for ( i = n; i >= 98; i--)
+int i;
+for (i = n; i >= 98; i--)
 {
-_putchar(n + '0');
-_putchar(',');
-_putchar(' ');
+printf("%d, ",n);
 }
 }
 }
