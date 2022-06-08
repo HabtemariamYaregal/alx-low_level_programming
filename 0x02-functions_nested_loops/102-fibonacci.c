@@ -5,10 +5,10 @@ long int first, second, next, i;
 first = 1;
 second = 2;
 next = first + second;
-printf("%d, %d, ", first ,second);
+printf("%ld, %ld, ", first ,second);
 for (i = 3; i <= 50; i++)
 {
-printf("%d, ", next);
+printf("%ld, ", next);
 first = second;
 second = next;
 next = first + second;
