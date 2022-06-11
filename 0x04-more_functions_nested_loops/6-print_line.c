@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - print staraight line.
+ * @n: variable passed to function
  */
 void print_line(int n)
 {
