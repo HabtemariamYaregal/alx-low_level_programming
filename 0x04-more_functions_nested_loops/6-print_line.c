@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * more_numbers - prints numbers 10 times.
+ * print_line - print staraight line.
  */
 void print_line(int n)
 {
