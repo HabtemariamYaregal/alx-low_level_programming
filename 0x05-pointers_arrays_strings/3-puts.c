@@ -7,5 +7,10 @@
 */
 void _puts(char *str)
 {
-_putchar(*str);
+int i;
+for (i = 0; str[i] != 0; i++)
+{
+_putchar(str[i]);
+}
+_purchar('\n')
 }
