@@ -8,11 +8,12 @@
 char *string_toupper(char *character)
 {
 int i;
-char ch;
 for (i = 0; character[i] != '\0'; i++)
 {
-ch = character[i];
-toupper(ch);
+if (character[i] >= 'a' && character[i] <= 'z')
+{
+character[i] = character[i] - 32;
 }
-return (0);
+}
+return (character);
 }
