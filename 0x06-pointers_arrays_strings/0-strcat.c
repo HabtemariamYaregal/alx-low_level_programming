@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strcpy - copy from one to another
+ * _strcat - copy from one to another
  * @dest: value that copy
  * @src: value to be copied
  * Return: dest
