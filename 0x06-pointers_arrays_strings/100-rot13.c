@@ -1,27 +1,24 @@
 #include "main.h"
 
 /**
- * rot13 - encode string using rot 13
- * @s: array to be changed
- * Return : s
-*/
+ * rot13 - change a string in rot13 encoding
+ * @s: array to be encoded
+ * Return: s
+ */
 char *rot13(char *s)
 {
-int j, i;
+int i, j;
+char ch1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char ch2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 for (i = 0; s[i] != '\0'; i++)
 {
-j = 0;
-while ((s[j] >= 'a' && s[j] <= 'z') || (s[j] >= 'A' && s[j] <= 'Z'))
+for (j = 0; ch1[j] != '\0'; j++)
 {
-if ((s[i] >= 'a' && s[i] <= 'm'))
+if (s[i] == ch1[j])
 {
-s[i] = s[i] + 13;
+s[i] = ch2[j];
+break;
 }
-else
-{
-s[i] = s[i] - 13;
-}
-j++;
 }
 }
 return (s);
