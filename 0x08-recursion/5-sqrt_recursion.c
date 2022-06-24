@@ -11,7 +11,7 @@
 
 int root_check(int checker, int n1)
 {
-if (checker * checker != n1)
+if ((checker * checker) != n1)
 {
 return (-1);
 }
