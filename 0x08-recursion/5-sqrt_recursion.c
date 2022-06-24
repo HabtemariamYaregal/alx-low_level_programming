@@ -4,6 +4,9 @@
  * _sqrt_recursion - returns the square root of a number
  * @n: base
  * Return: square root of n
+ * root_check - check if there is quare root
+ * @checker: variable to check
+ * @n1: another checker
 */
 
 int root_check(int checker, int n1)
