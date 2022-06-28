@@ -21,7 +21,7 @@ for (j = 0; av[i][j] != '\0'; j++)
 l++;
 l++;
 }
-s = malloc(sizeof(char) * (l));
+s = malloc(sizeof(char) * l);
 if (s == NULL)
 {
 return (NULL);
