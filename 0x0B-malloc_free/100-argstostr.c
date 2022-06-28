@@ -5,6 +5,7 @@
  * *argstostr - concatenates all arguments
  * @ac: size
  * @av: pointer to pointer
+ * Return: concatenated file
  */
 char *argstostr(int ac, char **av)
 {
