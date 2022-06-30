@@ -20,6 +20,5 @@ if (!add)
 {
 return (NULL);
 }
-return (add);
-free(add);
+ return (add);
 }
