@@ -10,7 +10,7 @@
 void *malloc_checked(unsigned int b)
 {
 int *ptr;
-ptr = (*int) malloc(size(int) * b);
+ptr = (int*) malloc(sizeof(int) * b);
 return(ptr); 
 free(ptr);
 }
