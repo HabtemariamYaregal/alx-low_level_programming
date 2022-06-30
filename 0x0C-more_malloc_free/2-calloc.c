@@ -10,15 +10,20 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int *add;
+unsigned int i;
+char *address;
 if (nmemb == 0 || size == 0)
 {
-return (NULL);
+return ('\0');
 }
-add = malloc(nmemb * size);
-if (!add)
+address = malloc(nmemb * size);
+if (address == NULL)
 {
-return (NULL);
+return ('\0');
 }
- return (add);
+for (i = 0; i < nmemb * size; i++)
+{
+address[i] = 0;
+}
+return ((void *)address);
 }
