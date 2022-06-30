@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * *_calloc - allocate memory for array
+ * @nmemb: array to be addressed
+ * @size: size of an array
+ * Return: a pointer to allocated memory
+*/
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+int *add;
+if (nmemb == 0 || size == 0)
+{
+return (NULL);
+{
+add = malloc(nmemb * size);
+if (!add)
+{
+return (NULL);
+}
+return (add);
+free(add);
+}
