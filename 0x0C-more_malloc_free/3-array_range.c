@@ -19,7 +19,7 @@ if (j < diff)
 {
 arr[j] = i;
 j++;
-} 
+}
 }
 if (min > max)
 {
