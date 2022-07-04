@@ -11,12 +11,16 @@ if (d != NULL)
 {
 if (d->name == NULL)
 {
-d->name = "nil";
+d->name = "(nil)";
 }
 if (d->owner == NULL)
 {
-d->owner = "nil";
+d->owner = "(nil)";
 }
+if (d->age == 0.0)
+{
+  d->age = 0.0;
+} 
 printf("Name: %s\n", d->name);
 printf("Name: %f\n", d->age);
 printf("Name: %s\n", d->owner);
