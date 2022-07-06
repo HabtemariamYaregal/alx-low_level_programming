@@ -6,7 +6,7 @@
  * int_index - execute a function of array
  * @array: array to be excuted
  * @cmp: a pointer to a function
- * @size: size of an array 
+ * @size: size of an array
  * Return: index
 */
 
@@ -18,7 +18,9 @@ if (array && cmp)
 for (i = 0; i < size; i++)
 {
 if (cmp(array[i]) != 0)
+{
 return (i);
+}
 }
 }
 return (-1);
