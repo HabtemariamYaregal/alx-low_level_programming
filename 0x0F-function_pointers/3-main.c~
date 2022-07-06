@@ -1,0 +1,36 @@
+#include "3-calc.h"
+
+/**
+ * main - program that contains the main function
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: 0
+ */
+int main(int argc, char *argv[])
+{
+int ar1, ar2, final;
+char ch;
+int (*fun)(int, int);
+if (argc != 4)
+{
+printf("Error\n");
+exit(98);
+}
+ar1 = atoi(argv[1]);
+ar2 = atoi(argv[3]);
+fun = get_op_func(argv[2]);
+if (!fun)
+{
+printf("Error\n");
+exit(99);
+}
+ch = *argv[2];
+if ((ch == '/' || ch == '%') && ar2 == 0)
+{
+printf("Error\n");
+exit(100);
+}
+result = fun(ar1, ar2);
+printf("%d\n", final);
+return (0);
+}
