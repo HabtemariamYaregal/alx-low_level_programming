@@ -22,9 +22,9 @@ for (i = 0; i < n; i++)
 {
 int val = va_arg(arg,int);
 /*char ch = va_arg(arg,char);*/
-if (i == n - 1)
+if (i == (n - 1))
 {
-printf("%d", val);  
+printf("%d", val);
 }
 else
 {
