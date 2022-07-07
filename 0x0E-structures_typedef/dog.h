@@ -1,5 +1,5 @@
 #ifndef DOG_H
-11;rgb:0000/0000/0000#define DOG_H
+#define DOG_H
 /**
  * struct dog - about dog
  * @name: name of a dog
