@@ -31,4 +31,5 @@ printf("%d%s", val, separator);
 }
 printf("\n");
 }
+va_end(arg); 
 }
