@@ -26,5 +26,6 @@ int val = va_arg(arg,int);
 sum = sum + val;
 }
 }
+va_end(arg);
 return (sum);
 }
