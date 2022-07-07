@@ -19,7 +19,7 @@ if (separator)
 {
 for (i = 0; i < n; i++)
 {
-int val = va_arg(arg,int);
+int val = va_arg(arg, int);
 if (i == (n - 1))
 {
 printf("%d", val);
