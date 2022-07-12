@@ -5,7 +5,7 @@
 
 /**
  * sum_them_all - return the sum of all parameters
- * @n: known argument
+ * @n: number of arguments
  * Return: the sum of all parameters
 */
 
