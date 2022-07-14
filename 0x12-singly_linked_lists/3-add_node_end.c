@@ -20,15 +20,23 @@ while (str[count])
 {
 count++;
 }
+if (str == NULL)
+{
+return (NULL);
+}
 added = malloc(sizeof(list_t));
 if (added == NULL)
 {
 return (NULL);
 }
 added->str = strdup(str);
+if (added->str == NULL)
+{
+free(added);
+return (NULL);
+}
 added->len = count;
 added->next = NULL;
-(*head) = added;
 if (*head == NULL)
 {
 *head = added;
