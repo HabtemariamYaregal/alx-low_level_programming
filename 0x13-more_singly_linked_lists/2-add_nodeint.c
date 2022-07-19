@@ -20,8 +20,8 @@ if (added == NULL)
 return (NULL);
 }
 added->n = n;
-added->next = (*head);
-(*head) = added;
+added->next = *head;
+*head = added;
 
 return (*head);
 }
