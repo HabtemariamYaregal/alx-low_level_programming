@@ -19,7 +19,7 @@ return (0);
 }
 while (head)
 {
-total= total + head->n;
+total = total + head->n;
 head = head->next;
 }
 return (total);
