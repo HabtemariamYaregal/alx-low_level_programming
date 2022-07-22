@@ -9,14 +9,14 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-int i, counter = 0;
-unsigned long int now;
-unsigned long int power = n ^ m;
-for (i = 63; i >= 0; i--)
+unsigned int i, flips = 0;
+unsigned long int j = sizeof(unsigned long int) * 8;
+for (i = 0; i < j; i++)
 {
-now = power >> i;
-if ( & 1)
-counter++;
+if ((m & 1) != (n & 1))
+flips += 1;
+n = n >> 1;
+m = m >> 1;
 }
-return (counter);
+return (flips);;
 }
