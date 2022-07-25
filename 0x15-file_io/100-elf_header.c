@@ -220,12 +220,12 @@ printf("%#lx\n", e_entry);
 }
 
 /**
- * close - Closes an ELF file.
+ * closed - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
  *
  * Description: If the file cannot be closed - exit code 98.
  */
-void close(int elf)
+void closed(int elf)
 {
 if (close(elf) == -1)
 {
@@ -259,7 +259,7 @@ exit(98);
 header = malloc(sizeof(Elf64_Ehdr));
 if (header == NULL)
 {
-close(fd);
+closed(fd);
 dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 exit(98);
 }
@@ -267,7 +267,7 @@ s = read(fd, header, sizeof(Elf64_Ehdr));
 if (s == -1)
 {
 free(header);
-close(fd);
+closed(fd);
 dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 exit(98);
 }
@@ -282,6 +282,6 @@ abi(header->e_ident);
 type(header->e_type, header->e_ident);
 entry(header->e_entry, header->e_ident);
 free(header);
-close(fd);
+closed(fd);
 return (0);
 }

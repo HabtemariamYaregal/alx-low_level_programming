@@ -11,6 +11,6 @@ void abi(unsigned char *e_ident);
 void osabi(unsigned char *e_ident);
 void type(unsigned int e_type, unsigned char *e_ident);
 void entry(unsigned long int e_entry, unsigned char *e_ident);
-void close(int elf);
+void closed(int elf);
 
 #endif
