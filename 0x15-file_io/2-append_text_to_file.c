@@ -21,11 +21,11 @@ return (-1);
 }
 if (text_content)
 {
-while (text_content[i])
+while (text_content[j])
 {
-i++;
+j++;
 }
-j = write(fd, text_content, i);
+i = write(fd, text_content, j);
 if (j != i)
 {
 return (-1);
